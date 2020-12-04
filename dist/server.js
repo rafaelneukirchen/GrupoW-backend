@@ -13,6 +13,6 @@ app.use(cors_1.default());
 app.use(express_1.default.json());
 app.use('/files', express_1.default.static(upload_1.default.directory));
 app.use(routes_1.default);
-app.listen(3333, function () {
+app.listen(process.env.PORT || 3333, function () {
     console.log('Servidor rodando na porta 3333 🚀');
 });

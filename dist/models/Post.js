@@ -7,9 +7,7 @@ var Post = /** @class */ (function () {
         this.user = user;
         this.text = text;
         this.id = uuid_1.v4();
-        this.created_at = new Date().toLocaleString('pt-BR', {
-            timeZone: 'America/Sao_Paulo',
-        });
+        this.created_at = new Date().toLocaleTimeString();
     }
     return Post;
 }());
