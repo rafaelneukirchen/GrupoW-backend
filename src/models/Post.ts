@@ -15,9 +15,7 @@ class Post {
     this.user = user;
     this.text = text;
     this.id = uuidv4();
-    this.created_at = new Date().toLocaleString('pt-BR', {
-      timeZone: 'America/Sao_Paulo',
-    });
+    this.created_at = new Date().toLocaleTimeString();
   }
 }
 export default Post;
