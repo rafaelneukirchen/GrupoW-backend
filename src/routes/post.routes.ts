@@ -26,7 +26,7 @@ postRouter.post('/', (request, response) => {
   } catch (err) {
     return response
       .status(400)
-      .json({ message: 'Failed to create a new Post.' });
+      .json({ message: 'Failed to create a new Post!' });
   }
 });
 
