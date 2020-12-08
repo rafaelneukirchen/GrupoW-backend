@@ -16,7 +16,7 @@ class User {
     this.name = name;
     this.email = email;
     this.password = password;
-    this.avatar = '';
+    this.avatar = 'img_placeholder.png';
   }
 }
 
