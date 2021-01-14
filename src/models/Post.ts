@@ -12,11 +12,11 @@ class Post {
   created_at: string;
   
   constructor({ user, text }: Omit<Post, 'id' | 'created_at'>) {
-    let created = new Date().toLocaleTimeString();
+    let created = new Date();
     this.user = user;
     this.text = text;
     this.id = uuidv4();
-    this.created_at = created; 
+    this.created_at = new Date(created.setTime(created.getTime() -(3 * 60 * 60 * 1000))).toString(); 
   }
 }
 export default Post;
