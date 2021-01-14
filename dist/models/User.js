@@ -8,7 +8,7 @@ var User = /** @class */ (function () {
         this.name = name;
         this.email = email;
         this.password = password;
-        this.avatar = '';
+        this.avatar = 'img_placeholder.png';
     }
     return User;
 }());

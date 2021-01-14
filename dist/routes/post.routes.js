@@ -33,7 +33,7 @@ postRouter.post('/', function (request, response) {
     catch (err) {
         return response
             .status(400)
-            .json({ message: 'Failed to create a new Post.' });
+            .json({ message: 'Failed to create a new Post!' });
     }
 });
 exports.default = postRouter;
