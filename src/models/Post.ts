@@ -12,7 +12,7 @@ class Post {
   created_at: string;
   
   constructor({ user, text }: Omit<Post, 'id' | 'created_at'>) {
-    let created = new Date().toTimeString();
+    let created = new Date().toLocaleTimeString();
     this.user = user;
     this.text = text;
     this.id = uuidv4();
